@@ -10,8 +10,12 @@
 </template>
 
 <script>
+import TodoList from "@/components/TodoList.vue"
 export default {
   name: "App",
+  components: {
+    TodoList
+  }
   data: function () {
     return {
       message: "WebExpert Course Vue Template",
