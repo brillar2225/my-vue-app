@@ -1,45 +1,23 @@
 <template>
-  <div id="app">
-    <div class="hello-wrold">
-      <img alt="Vue logo" src="./assets/logo.png" />
-      <div class="hello-wrold__message">
-        {{ message }}
-      </div>
-    </div>
-  </div>
+  <v-app>
+    <v-content>
+      <Calendar />
+    </v-content>
+  </v-app>
 </template>
 
 <script>
-import TodoList from "@/components/TodoList.vue"
+//import TodoList from "@/components/TodoList.vue"
+import Calendar from "@/components/Calendar.vue"
+
 export default {
   name: "App",
   components: {
-    TodoList
-  }
+    Calendar,
+  },
   data: function () {
-    return {
-      message: "WebExpert Course Vue Template",
-    }
+    return {}
   },
   methods: {},
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-</style>
-
-<style scoped>
-.hello-wrold {
-  margin-top: 60px;
-  text-align: center;
-}
-
-.hello-wrold .hello-world__message {
-  color: #2c3e50;
-}
-</style>
